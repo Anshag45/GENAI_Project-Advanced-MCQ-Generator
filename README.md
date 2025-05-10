@@ -22,9 +22,6 @@ An AI-powered full-stack web application that automatically generates Multiple C
 ---
 
 ## 📸 Screenshots
-
-> _Add screenshots here to demonstrate UI, customization panel, MCQ output, and PDF download._
-
 ### 🔐 Login  
 ![Login](https://github.com/user-attachments/assets/a4128783-8daf-4007-a250-09f3c0224a73)
 
@@ -102,41 +99,30 @@ User Testing: Usability and interface feedback
 
 📈 Results
 ✅ Generates context-aware MCQs with logical distractors and feedback
-
 💬 Includes quality explanations and optional hints
-
 ⚡ Fast and scalable performance across platforms
-
 🧠 Handles edge cases like minimal or noisy text inputs
 
 🔮 Future Enhancements
 📚 Domain-specific tuning (Science, History, Technology, etc.)
-
 🧠 AI-based automatic difficulty classification
-
 🎤 Speech or 🖼️ Image-based content input
-
 🌍 Multilingual MCQ generation (via multilingual NLP models)
-
 📊 Analytics & Feedback System for improving question quality
 
 🧩 Getting Started
 ⚙️ Prerequisites
 Python 3.9+
-
 Node.js 18+
-
 MongoDB (Local or Atlas)
-
 OpenAI API Key (for GPT usage)
 
 🚀 Backend Setup
-
 cd backend
 pip install -r requirements.txt
 python manage.py runserver
-💻 Frontend Setup
 
+💻 Frontend Setup
 cd frontend
 npm install
 npm run dev
