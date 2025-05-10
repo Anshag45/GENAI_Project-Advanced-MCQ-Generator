@@ -27,14 +27,26 @@ An AI-powered full-stack web application that automatically generates Multiple C
 
 **Example Screenshots:**
 
+### login
+![image](https://github.com/user-attachments/assets/a4128783-8daf-4007-a250-09f3c0224a73)
+
+
 ### 🎛️ MCQ Settings Panel  
-![MCQ Settings Panel](./screenshots/settings-panel.png)
+![image](https://github.com/user-attachments/assets/49586d8c-0433-4e2e-ab6f-c638540507db)
+![image](https://github.com/user-attachments/assets/651e7c31-5a48-43c2-8996-c8604bcddcc4)
+![image](https://github.com/user-attachments/assets/0b5a507a-6eb8-48f2-bf0e-93a5baeb62ba)
+
 
 ### 🧾 Generated Questions Preview  
-![Generated MCQs](./screenshots/generated-questions.png)
+![image](https://github.com/user-attachments/assets/d33ebd20-abcb-4470-879e-3495b51bbaca)
+![image](https://github.com/user-attachments/assets/92a3433d-d43b-4fc4-8761-e9cba993b408)
+
 
 ### 📤 PDF Export View  
-![PDF Export](./screenshots/pdf-download.png)
+![image](https://github.com/user-attachments/assets/efe66e2a-fd90-4aa3-b75f-9c856d840d65)
+
+### extract questions from the given url
+![image](https://github.com/user-attachments/assets/c38559c2-7c26-4eca-9356-60244681cb1e)
 
 ---
 
