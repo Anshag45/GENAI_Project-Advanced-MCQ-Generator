@@ -1,23 +1,23 @@
-# GENAI_Project-Advanced-MCQ-Generator
-# 🧠 Advanced MCQ Generator Using Generative AI
+# 🧠 GENAI_Project – Advanced MCQ Generator Using Generative AI
 
-An AI-powered full-stack web application that automatically generates Multiple Choice Questions (MCQs) from web articles using Natural Language Processing and Generative AI. Built for educators, students, and trainers to simplify assessment creation with intelligent, customizable questions.
+An AI-powered full-stack web application that automatically generates Multiple Choice Questions (MCQs) from web articles using Natural Language Processing (NLP) and Generative AI. Designed for educators, students, and trainers, this tool streamlines assessment creation with intelligent, customizable questions.
 
 ---
 
 ## 🚀 Features
 
-- 🌐 **URL-based Content Extraction** – Scrape text from any user-provided webpage using Beautiful Soup.
-- 🤖 **AI-powered Question Generation** – Automatically generate context-aware and grammatically valid MCQs using SpaCy + custom logic.
-- 🎚️ **Custom Generation Settings** – Choose:
+- 🌐 **URL-based Content Extraction** – Scrapes meaningful content from webpages using BeautifulSoup.
+- 🤖 **AI-driven Question Generation** – Generates high-quality MCQs using OpenAI GPT models and SpaCy NLP techniques.
+- 🎚️ **Custom Generation Settings** – Tailor your quiz with:
   - Number of Questions
   - Difficulty Level (Easy / Medium / Hard)
-  - Number of Correct Answers per Question
-  - Temperature Control (to adjust AI randomness)
-- 📝 **Answer Explanations & Hints** – Every question includes detailed feedback and an optional hint for learning reinforcement.
-- 📄 **Download as PDF** – Export question sets as PDF with or without answers.
-- 🔐 **JWT Authentication** – Secure login and user session management.
-- 📦 **MongoDB Backend** – Store and retrieve generated questions using a fast and scalable NoSQL database.
+  - Number of Correct Answers
+  - Temperature Control (AI creativity)
+- 🧠 **Hints and Explanations** – Enhances understanding with helpful hints and explanations for each question.
+- 📄 **PDF Export** – Export MCQs with or without answers for offline usage.
+- 🔐 **Secure Authentication** – Login system using JWT tokens.
+- 🧾 **Session Management** – Save your generated content securely using MongoDB.
+- 🧪 **Tested Workflow** – Robust input handling, grammar checks, and end-to-end generation validation.
 
 ---
 
@@ -25,109 +25,110 @@ An AI-powered full-stack web application that automatically generates Multiple C
 
 > _Add screenshots here to demonstrate UI, customization panel, MCQ output, and PDF download._
 
-**Example Screenshots:**
-
-### login
-![image](https://github.com/user-attachments/assets/a4128783-8daf-4007-a250-09f3c0224a73)
-
+### 🔐 Login  
+![Login](https://github.com/user-attachments/assets/a4128783-8daf-4007-a250-09f3c0224a73)
 
 ### 🎛️ MCQ Settings Panel  
-![image](https://github.com/user-attachments/assets/49586d8c-0433-4e2e-ab6f-c638540507db)
-![image](https://github.com/user-attachments/assets/651e7c31-5a48-43c2-8996-c8604bcddcc4)
-![image](https://github.com/user-attachments/assets/0b5a507a-6eb8-48f2-bf0e-93a5baeb62ba)
-
+![Settings](https://github.com/user-attachments/assets/49586d8c-0433-4e2e-ab6f-c638540507db)  
+![Settings 2](https://github.com/user-attachments/assets/651e7c31-5a48-43c2-8996-c8604bcddcc4)  
+![Settings 3](https://github.com/user-attachments/assets/0b5a507a-6eb8-48f2-bf0e-93a5baeb62ba)
 
 ### 🧾 Generated Questions Preview  
-![image](https://github.com/user-attachments/assets/d33ebd20-abcb-4470-879e-3495b51bbaca)
-![image](https://github.com/user-attachments/assets/92a3433d-d43b-4fc4-8761-e9cba993b408)
-
+![Questions](https://github.com/user-attachments/assets/d33ebd20-abcb-4470-879e-3495b51bbaca)  
+![Questions 2](https://github.com/user-attachments/assets/92a3433d-d43b-4fc4-8761-e9cba993b408)
 
 ### 📤 PDF Export View  
-![image](https://github.com/user-attachments/assets/efe66e2a-fd90-4aa3-b75f-9c856d840d65)
+![PDF Export](https://github.com/user-attachments/assets/efe66e2a-fd90-4aa3-b75f-9c856d840d65)
 
-### extract questions from the given url
-![image](https://github.com/user-attachments/assets/c38559c2-7c26-4eca-9356-60244681cb1e)
+### 🌐 Extract Questions from URL  
+![Extract](https://github.com/user-attachments/assets/c38559c2-7c26-4eca-9356-60244681cb1e)
 
 ---
 
 ## 🛠️ Tech Stack
 
-**Frontend:**
-- React.js
-- Material UI
-- Tailwind CSS
+### 🔧 Frontend
+- **React.js** – Modern UI with reusable components
+- **Tailwind CSS** – Utility-first styling
+- **Material UI** – Pre-built responsive components
+- **Streamlit** – Used optionally for simplified front-end visualization
 
-**Backend:**
-- Django
-- Django REST Framework
-- BeautifulSoup (for scraping)
-- SpaCy (for NLP/NER)
-- PyMongo
+### ⚙️ Backend
+- **Django** – High-level Python web framework
+- **Django REST Framework** – For building RESTful APIs
+- **BeautifulSoup** – Web scraping library
+- **SpaCy** – NLP engine for named entity recognition
+- **OpenAI GPT API** – Generative AI for question and explanation generation
+- **PyMongo** – Python driver for MongoDB
 
-**Database:**
-- MongoDB
+### 🗄️ Database
+- **MongoDB** – NoSQL database for storing users and generated MCQs
 
-**Authentication:**
-- JWT (JSON Web Tokens)
+### 🔐 Authentication
+- **JWT (JSON Web Tokens)** – Secure, stateless authentication
 
 ---
 
-## 🔍 Project Architecture
+## 📐 Project Architecture
 
 ```plaintext
 User Input (URL + Settings)
         ↓
 Content Scraper (BeautifulSoup)
         ↓
-NLP Processing (SpaCy NER)
+NLP Pipeline (SpaCy)
         ↓
-Question Generator (Logic + AI)
+AI Question Generator (OpenAI GPT API)
         ↓
-MCQ Output (with Feedback & Hint)
+Question Formatting + Explanation
         ↓
-Frontend UI + PDF Export
-🧪 Testing Overview
-✅ Testing Strategy
-Input Validation for various types of URLs and content
+Frontend Display + PDF Export
+✅ Testing Overview
+🧪 Testing Strategy
+Input validation for multiple URL types and content formats
 
-Relevance and grammar of generated MCQs
+Relevance and grammar accuracy of AI-generated MCQs
 
-End-to-end flow from login → generate → export
+End-to-end validation from login → generate → export
 
-🔍 Types of Testing Conducted
-Unit Testing: Modules for scraping, question generation, APIs
+🧪 Testing Types
+Unit Testing: Scraping, NLP, and MCQ generation logic
 
-Integration Testing: Communication between Django & React
+Integration Testing: Django API ↔ React frontend communication
 
-User Testing: UI/UX feedback and question quality testing
+Performance Testing: Handles large web pages and fast generation
 
-Performance Testing: Large content processing and export validation
+User Testing: Usability and interface feedback
 
-📊 Results
-✅ Accurate MCQs with relevant explanations and hints
+📈 Results
+✅ Generates context-aware MCQs with logical distractors and feedback
 
-🧠 Handles edge cases like sparse/noisy text
+💬 Includes quality explanations and optional hints
 
-⚡ Fast performance with minimal delay
+⚡ Fast and scalable performance across platforms
 
-🧭 Future Enhancements
-🧠 Domain-Specific Tuning (Science, History, Technology, etc.)
+🧠 Handles edge cases like minimal or noisy text inputs
 
-📊 Auto-Classified Difficulty Levels using AI
+🔮 Future Enhancements
+📚 Domain-specific tuning (Science, History, Technology, etc.)
 
-🎤 Voice and 🖼️ Image Input for question generation
+🧠 AI-based automatic difficulty classification
 
-📈 User Feedback System to improve question quality
+🎤 Speech or 🖼️ Image-based content input
 
-🌍 Multi-language MCQ generation using multilingual NLP models
+🌍 Multilingual MCQ generation (via multilingual NLP models)
 
-📂 Getting Started
+📊 Analytics & Feedback System for improving question quality
+
+🧩 Getting Started
 ⚙️ Prerequisites
 Python 3.9+
 
 Node.js 18+
 
-MongoDB (Local or Atlas Cloud)
+MongoDB (Local or Atlas)
+
+OpenAI API Key (for GPT usage)
 
 🚀 Backend Setup
 
@@ -139,22 +140,10 @@ python manage.py runserver
 cd frontend
 npm install
 npm run dev
-📎 GitHub Repository
-🔗 Project Repo: GENAI_Project-Advanced-MCQ-Generator
 
-🙌 Contributors
-Ansh Agarwal – Full Stack Developer & Project Lead
-
-Thanks to all early testers and reviewers!
+👨‍💻 Contributors
+Ansh Agarwal – Full Stack Developer
+📧 Email: agarwalansh651@gmail.com
 
 📜 License
-This project is licensed under the MIT License.
-
-Let me know if you'd like this saved as a downloadable `.md` file or if you want help creating the screenshots to insert into the placeholders.
-
-
-
-
-
-
-
+This project is licensed under the MIT Licens
