@@ -127,9 +127,5 @@ cd frontend
 npm install
 npm run dev
 
-👨‍💻 Contributors
-Ansh Agarwal – Full Stack Developer
-📧 Email: agarwalansh651@gmail.com
 
-📜 License
-This project is licensed under the MIT Licens
+📧 Email: agarwalansh651@gmail.com
